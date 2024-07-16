@@ -3,39 +3,40 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-/*     background: url('ismi2024-peter-rhea.jpg') no-repeat center center fixed; /* Add a violin-themed background image */ */
-    background-size: cover;
+    background: #fff5e1;
     color: #333;
 }
 
 header {
-    background: rgba(51, 51, 51, 0.8);
+    background: #603913;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
-    border-bottom: 5px solid #b5651d; /* Add a violin wood color border */
+    background-image: url('violin-pattern.png'); /* Add a violin pattern image here */
+    background-size: cover;
+    background-position: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
-    font-family: 'Cursive', serif; /* Add a cursive font for a more artistic look */
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
 }
 
 header p {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 nav {
-    background: rgba(68, 68, 68, 0.8);
+    background: #755a3b;
     text-align: center;
-    border-bottom: 2px solid #b5651d;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -49,44 +50,60 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #b5651d; /* Change color on hover to match violin wood */
-}
-
 section {
     padding: 2rem;
-    margin: 1rem 0;
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid #b5651d; /* Add a violin wood color border */
+    margin: 1rem auto;
+    max-width: 800px;
+    background: #fff;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section#bio {
-    background: rgba(244, 244, 244, 0.8);
+    background: rgba(255, 245, 225, 0.9);
+    border-left: 5px solid #603913;
 }
 
 section#achievements {
-    background: rgba(226, 226, 226, 0.8);
+    background: rgba(255, 245, 225, 0.8);
+    border-left: 5px solid #755a3b;
 }
 
 section#contact {
-    background: rgba(204, 204, 204, 0.8);
+    background: rgba(255, 245, 225, 0.7);
+    border-left: 5px solid #8a6b47;
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: rgba(51, 51, 51, 0.8);
+    background: #603913;
     color: #fff;
-    border-top: 5px solid #b5651d; /* Add a violin wood color border */
 }
 
 footer p {
     margin: 0;
 }
 
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #603913;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: url('violin-icon.png') no-repeat left center; /* Add a violin icon image here */
+    padding-left: 40px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
 a {
-    color: #b5651d; /* Add violin wood color to links */
+    color: #603913;
     text-decoration: none;
 }
 
