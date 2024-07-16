@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: #fff5e1;
-    color: #333;
+    /*color: #333;*/
 }
 
 header {
@@ -12,7 +12,7 @@ header {
     color: #fff;
     padding: 1.5rem 0;
     text-align: center;
-    background-image: url('ismi2024-peter-rhea.jpg'); /* Add a violin pattern image here */
+    background-image: url('ismi2024-peter-rhea.jpg'); 
     background-size: cover;
     background-position: center;
 }
