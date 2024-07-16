@@ -1,20 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: url('https://example.com/violin-background.jpg') no-repeat center center fixed; /* Add a violin-themed background image */
+    background-size: cover;
+    color: #333;
 }
 
 header {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    border-bottom: 5px solid #b5651d; /* Add a violin wood color border */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    font-family: 'Cursive', serif; /* Add a cursive font for a more artistic look */
 }
 
 header p {
@@ -23,8 +28,9 @@ header p {
 }
 
 nav {
-    background: #444;
+    background: rgba(68, 68, 68, 0.8);
     text-align: center;
+    border-bottom: 2px solid #b5651d;
 }
 
 nav ul {
@@ -40,32 +46,50 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #b5651d; /* Change color on hover to match violin wood */
 }
 
 section {
     padding: 2rem;
     margin: 1rem 0;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #b5651d; /* Add a violin wood color border */
+    border-radius: 10px;
 }
 
 section#bio {
-    background: #f4f4f4;
+    background: rgba(244, 244, 244, 0.8);
 }
 
 section#achievements {
-    background: #e2e2e2;
+    background: rgba(226, 226, 226, 0.8);
 }
 
 section#contact {
-    background: #ccc;
+    background: rgba(204, 204, 204, 0.8);
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
+    border-top: 5px solid #b5651d; /* Add a violin wood color border */
 }
 
 footer p {
     margin: 0;
+}
+
+a {
+    color: #b5651d; /* Add violin wood color to links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
