@@ -11,7 +11,55 @@
         <h1>Peter Hu</h1>
         <p>Violinist</p>
     </header>
-    
+        
+        
+    <div class="gallery" id="gallery">
+    <img src="https://picsum.photos/400/300?1">
+    <img src="https://picsum.photos/400/300?2">
+    <img src="https://picsum.photos/400/300?3">
+    <img src="https://picsum.photos/400/300?4">
+    <img src="https://picsum.photos/400/300?5">
+    <img src="https://picsum.photos/400/300?6">
+    <img src="https://picsum.photos/400/300?7">
+    <img src="https://picsum.photos/400/300?8">
+    </div>
+
+    <script>
+    const images = [
+    "https://picsum.photos/400/300?11",
+    "https://picsum.photos/400/300?12",
+    "https://picsum.photos/400/300?13",
+    "https://picsum.photos/400/300?14",
+    "https://picsum.photos/400/300?15",
+    "https://picsum.photos/400/300?16"
+    ];
+
+    const gallery = document.getElementById("gallery");
+    const slots = gallery.querySelectorAll("img");
+
+    function shuffleImage() {
+    const index = Math.floor(Math.random() * slots.length);
+    const newImg = images[Math.floor(Math.random() * images.length)];
+    const el = slots[index];
+
+    el.classList.add("fade-out");
+
+    setTimeout(() => {
+        el.src = newImg;
+        el.classList.remove("fade-out");
+        el.classList.add("fade-in");
+
+        setTimeout(() => {
+        el.classList.remove("fade-in");
+        }, 500);
+
+    }, 300);
+    }
+
+    // run shuffle every 1 second
+    setInterval(shuffleImage, 1000);
+    </script>
+
     <nav>
         <ul>
             <li><a href="#bio">Bio</a></li>
@@ -22,7 +70,7 @@
     
     <section id="bio">
         <h2>Bio</h2>
-        <p>Born in Columbus, Ohio in 2014, Peter began studying the violin at eight, in 2022, with Dr. Rhea Edelman, at Suzuki Music Institude of Dallas, and quickly distinguishing himself from his peers through his musical sensitivity and natural command of the instrument. In 2023, one year after he started his journey, he received the Honorable Mention prize in the Elementary Division of the Dallas Music Teachers Association Competition. The following year, he was awarded 1st Prize in the same division, reflecting his continued artistic growth and dedication. Peter finished Suzuki Books 1-8, along with several virtuosic pieces, in just a year and a half.
+        <p>Born in Columbus, Ohio in January of 2014, Peter began studying the violin at eight, in 2022, with Dr. Rhea Edelman, at Suzuki Music Institude of Dallas, and quickly distinguishing himself from his peers through his musical sensitivity and natural command of the instrument. In 2023, one year after he started his journey, he received the Honorable Mention prize in the Elementary Division of the Dallas Music Teachers Association Competition. The following year, he was awarded 1st Prize in the same division, reflecting his continued artistic growth and dedication.
 
         In 2025, Peter was named the winner of the concerto competition at University of Texas' International Summer Music Institude (ISMI), leading to a performance of the Haydn Violin Concerto in G Major (Hob.VIIa:4) with the ISMI String Orchestra, under the baton of Clay Couturiaux.
 
@@ -30,15 +78,16 @@
 
         Committed to disciplined practice and artistic excellence, he approaches his studies with focus, curiosity, and determination. As he continues to expand his repertoire and musical understanding, he aspires to deepen both his technical mastery and expressive range.
 
-        Beyond his musical pursuits, he enjoys origami, math, and other creative activities, which reflect the same patience, precision, and thoughtful craftsmanship that characterize his violin playing.</p>
+        Beyond his musical pursuits, he enjoys origami and other creative activities, which reflect the same patience, precision, and thoughtful craftsmanship that characterize his violin playing.</p>
     </section>
     
     <section id="achievements">
         <h2>Achievements</h2>
         <ul>
-            <li>DMTA Honorable Mention: January 21, 2023</li>
-            <li>Achievement 2</li>
-            <li>Achievement 3</li>
+            <li>International Summer Music Institute 2025 Concerto Competition First Prize Winner</li>
+            <li>International Summer Music Institute 2024 COncerto competition Audience Choice Prize Winner</li>
+            <li>Dallas Music Teachers Association First Prize Winner</li>
+            <li>Dallas Music Teachers Association Honorable Mention: January 21, 2023</li>
             <!-- Add more achievements as needed -->
         </ul>
     </section>
