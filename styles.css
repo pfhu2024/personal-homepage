@@ -10,7 +10,8 @@ body {
 header {
     background: #603913;
     color: #fffb00;
-    padding: 100rem 0; 
+    /* padding: 100rem 0;  */
+    padding-bottom: 100rem;
     text-align: center;
     background-image: url('IMG_20240127_124257.jpg'); 
     background-size: cover;
