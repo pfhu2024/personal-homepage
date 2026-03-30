@@ -7,6 +7,16 @@ body {
     color: #333;
 }
 
+/* header {
+    background: #603913;
+    color: #0022ff;
+    padding-bottom: 100rem;
+    text-align: left;
+    background-image: url('IMG_20240127_124257.jpg'); 
+    background-size: cover;
+    background-position: center;
+} */
+
 header {
     background: #603913;
     color: #0022ff;
@@ -15,6 +25,7 @@ header {
     background-image: url('IMG_20240127_124257.jpg'); 
     background-size: cover;
     background-position: center;
+    font-size: 2rem;
 }
 
 header h1 {
